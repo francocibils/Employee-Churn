@@ -1,10 +1,9 @@
 import pandas as pd
-import numpy as np
 import pickle
 import streamlit as st
 
 # Load model
-rf_clf = pickle.load(open('Employee-Churn/rf_clf.pkl', 'rb'))
+rf_clf = pickle.load(open('employee-churn/rf_clf.pkl', 'rb'))
 
 # Naming
 areas = ['Product management', 'Technical', 'Sales', 'Management', 'Accounting', 'R+D', 'Marketing', 'HHRR', 'Support', 'IT']
